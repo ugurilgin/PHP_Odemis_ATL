@@ -1,0 +1,11 @@
+<?php
+$dosya=fopen("dosya.txt","w");
+$i=0;
+while($i<10)
+{
+	$bilgi=$i.".katýt\n";
+	fwrite($dosya,$bilgi);
+	$i++;
+}
+fclose($dosya);
+?>
